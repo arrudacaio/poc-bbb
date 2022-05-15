@@ -21,18 +21,18 @@ log4js.configure({
   }
 })
 
-const loggerEngine = log4js.getLogger('BUDGET') // Changes here -> name of service
+const loggerEngine = log4js.getLogger('BBB') // Changes here -> name of service
 
 
 const { logger } = escriba({
   loggerEngine,
-  service: 'budget'
+  service: 'bbb'
 })
 
 const makeLogger = () => {
   const from = process.env.APP_TYPE
 
-  function makeLogByLevel (level) {
+  function makeLogByLevel(level) {
     return (data = {}, config = {}) => {
       const finalDate = {
         from,
