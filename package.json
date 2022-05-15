@@ -1,0 +1,45 @@
+{
+  "name": "poc-finances",
+  "version": "1.0.0",
+  "description": "PoC My Budget",
+  "main": "src/bin/server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev:server": "nodemon src/bin/server.js",
+    "start:server": "node src/bin/server.js",
+    "test": "jest --forceExit --verbose test --env=node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrudacaio/poc-finances.git"
+  },
+  "keywords": [
+    "finances"
+  ],
+  "author": "Caio Arruda @arrudacaio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrudacaio/poc-finances/issues"
+  },
+  "homepage": "https://github.com/arrudacaio/poc-finances#readme",
+  "devDependencies": {
+    "escriba": "^2.10.0",
+    "eslint": "^8.13.0",
+    "eslint-config-pagarme-base": "^3.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1116.0",
+    "axios": "^0.26.1",
+    "cuid": "^2.1.8",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "log4js": "^6.4.5",
+    "ramda": "^0.28.0"
+  }
+}

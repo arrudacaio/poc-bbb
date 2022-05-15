@@ -1,0 +1,2 @@
+ 
+#  SQS Resource config here
